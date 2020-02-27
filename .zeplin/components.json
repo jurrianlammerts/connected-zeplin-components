@@ -1,0 +1,35 @@
+{
+  "plugins": [
+    {
+      "name": "@zeplin/cli-connect-react-plugin"
+    },
+    {
+      "name": "@zeplin/cli-connect-storybook-plugin",
+      "config": {
+        "url": "http://localhost:9009",
+        "startScript": "storybook"
+      }
+    }
+  ],
+  "projects": [""],
+  "styleguides": [""],
+  "github": {
+    "repository": "connected-zeplin-components"
+  },
+  "components": [
+    {
+      "path": "src/components/Button.js",
+      "zeplinNames": [
+        "button/default/primary",
+        "button/default/secondary",
+        "button/default/success",
+        "button/default/outline",
+        "button/default/disabled"
+      ],
+      "storybook": {
+        "kind": "Button",
+        "stories": ["primary", "secondary", "succes", "disabled", "outline"]
+      }
+    }
+  ]
+}
